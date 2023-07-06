@@ -1,5 +1,7 @@
 package j100_CodeChallange.InterviewQuestions;
 
+import java.util.Scanner;
+
 public class Q09_ArmstrongNumber_4Digits {
    /*
     Armstrong sayi:herhangi bir sayinin rakamlarinin kupleri toplami o sayiyi veriyorsa sayi  Armstrong sayidir
@@ -11,7 +13,21 @@ public class Q09_ArmstrongNumber_4Digits {
         5 basamakli : 54748 */
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("bir sayi giriniz : ");
+        String sayi = scan.next();
 
+        int rakamKupToplam=0;
+
+        String [] rakam=sayi.split("");
+        for (int i = 0; i <rakam.length; i++) {
+            rakamKupToplam+= Math.pow(Double.parseDouble(rakam[i]), rakam.length);
+
+        } System.out.println(
+                rakamKupToplam == Integer.parseInt(sayi) ?
+                        ("bizim oolann sayi " + sayi + " AMSTRONG :) ") :
+                        "bizim oolann sayi " + sayi + " AMSTRONG değil :( "
+        );
 
     }
 }

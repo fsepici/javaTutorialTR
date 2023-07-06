@@ -1,5 +1,7 @@
 package j100_CodeChallange.InterviewQuestions;
 
+import java.util.Scanner;
+
 public class Q08_ArmstrongNumber {
     /*  soru1: Check if the integer is an Armstrong numbers to 4 digit numbers(4 digit-> exclusive)
         Armstrong sayi:herhangi bir 3 basamakli sayinin rakamlarinin kupleri toplami o sayiyi veriyorsa sayi  Armstrong sayidir
@@ -10,6 +12,18 @@ public class Q08_ArmstrongNumber {
           soru2: Birden baslayarak girilen sayıya kadar her bir tamsayının amstrong sayı olup olmadıgını
           gösteren program yazınız */
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("bir sayi giriniz : ");
+        int sayi = scan.nextInt();
+        int girilenSayi=sayi;
+        int rakamKupToplam=0;
+        while (sayi>0){
+            rakamKupToplam+=Math.pow(sayi,3);
+            sayi/=10;
+        }
+        if (rakamKupToplam==girilenSayi){
+            System.out.println("Girdiğiniz "+sayi+" sayısı bir AMSTRONG sayıdır");
+        }
 
     }
 }
