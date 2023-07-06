@@ -15,6 +15,11 @@ public class C01_LocalDate {
         LocalDate date1=LocalDate.of(1985,6,24);
         LocalDate date2=LocalDate.of(1988,8,29);
 
+        System.out.println("date1 = " + date1);
+
+        System.out.println("date1.plusDays(300) = " + date1.plusDays(300));
+        System.out.println("date2.minusDays(300) = " + date2.minusDays(300));
+        System.out.println("date1.minusMonths(3).plusWeeks(25) = " + date1.minusMonths(3).plusWeeks(25));
 
     }
 }

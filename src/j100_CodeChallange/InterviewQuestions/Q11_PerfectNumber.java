@@ -1,5 +1,7 @@
 package j100_CodeChallange.InterviewQuestions;
 
+import java.util.Scanner;
+
 public class Q11_PerfectNumber {
     /* Task->
     Perfect Number (Mukemmel sayi)
@@ -12,6 +14,18 @@ public class Q11_PerfectNumber {
     */
 
     public static void main(String[] args) {
+
+
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("bir sayi giriniz : ");
+        int sayi = scan.nextInt();
+
+        int rakamKupToplam=0;
+
+
+
+
 
     }
 }
